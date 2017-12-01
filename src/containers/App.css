@@ -1,0 +1,64 @@
+.App-logo {
+  height: 80px;
+}
+
+.row{
+  margin: 0;
+}
+
+.App-header {
+  background-color: #38B4E6;
+  height: 120px;
+  padding: 20px;
+  color: white;
+}
+
+.page{
+  padding-top: 20px;
+  margin: 20px;
+  border: 4px solid gray;
+  border-radius: 4px;
+  height:450px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.box{
+  border: 2px solid gray;
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+p{
+  margin: 0;
+}
+
+.label{
+  color: black;
+}
+
+#sourceInformation{
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.smallImg{
+  width:12%;
+  height: 100%;
+}
+
+.pullFlexItemRigth{
+  margin-left:auto
+}
+
+.alignCenter {
+  text-align: center;
+}
+
+.underline{
+  width:100%;
+}
+
+.bordered{
+  border: 1px solid black;
+}
