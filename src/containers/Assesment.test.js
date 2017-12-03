@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from 'App';
+import Assesment from 'Assesment';
 import { shallow } from 'enzyme';
 
 beforeAll(() => {
@@ -10,5 +10,5 @@ beforeAll(() => {
 });
 
 it('renders without crashing', () => {
-  shallow(<App />)
+  shallow(<Assesment />)
 });

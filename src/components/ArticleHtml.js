@@ -1,7 +1,7 @@
 import React from 'react';
 
-export default function () {
+export default function ({html}) {
   return (
-    <div className="page" dangerouslySetInnerHTML={{__html: this.props.html}}></div>
+    <div className="body__page" dangerouslySetInnerHTML={{__html: html}}></div>
   )
 }

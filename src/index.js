@@ -1,5 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from 'App';
+import Assesment from 'Assesment';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<Assesment />, document.getElementById('root'));

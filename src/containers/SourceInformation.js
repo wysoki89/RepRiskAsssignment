@@ -5,17 +5,17 @@ import PageTitle from 'PageTitle';
 import moment from 'moment';
 import PropTypes from 'prop-types';
 
-const SourceInformation = props => {
+const SourceInformation = ({articleSourceLocation, articleSourceName, articleSourceDescription, articleDate, locations}) => {
   const transformDate = date => {
     return moment(date * 1000).format('YYYY-MM-DD');
   }
   return (
-    <div id="sourceInformation" className="page">
+    <div className="body__page body__page--paddingHorizontal">
       <PageTitle title="Source Information" />
-      <Box label="Name" val={props.articleSourceName} />
-      <Location location={props.articleSourceLocation} locations={props.locations} />
-      <Box label="Description" val={props.articleSourceDescription} />
-      <Box label="Article Date" val={transformDate(props.articleDate)} />
+      <Box label="Name" value={articleSourceName} />
+      <Location location={articleSourceLocation} locations={locations} />
+      <Box label="Description" value={articleSourceDescription} />
+      <Box label="Article Date" value={transformDate(articleDate)} />
     </div>
   )
 }

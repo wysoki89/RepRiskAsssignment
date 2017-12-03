@@ -1,10 +1,10 @@
 import React from 'react';
 
-export default function (props) {
+export default function ({label, value}) {
     return (
         <div>
-            <p className="label">{props.label}</p>
-            <p className="box">{props.val}</p>
+            <p className="label">{label}</p>
+            <p className="box">{value}</p>
         </div>
     )
 }

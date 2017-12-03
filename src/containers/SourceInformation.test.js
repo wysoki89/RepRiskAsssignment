@@ -17,7 +17,7 @@ it('checks if box childs are rendered', () => {
     articleSourceDescription={description}
     articleDate={date}
     locations={locations} />);
-  expect(wrapper).toContainReact(<Box label="Name" val={name}/>)
-  expect(wrapper).toContainReact(<Box label="Description" val={description}/>)
-  expect(wrapper).toContainReact(<Box label="Article Date" val={convertedDate}/>)
+  expect(wrapper).toContainReact(<Box label="Name" value={name}/>)
+  expect(wrapper).toContainReact(<Box label="Description" value={description}/>)
+  expect(wrapper).toContainReact(<Box label="Article Date" value={convertedDate}/>)
 });

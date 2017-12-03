@@ -3,17 +3,17 @@ import PageTitle from 'PageTitle';
 import Company from 'Company';
 import PropTypes from 'prop-types';
 
-const CompaniesList = props => {
+const CompaniesList = ({companies}) => {
   const getFlag = code => {
     if (code) {
       return require(`../images/Flags/${code.toLowerCase()}.svg`)
     }
   }
   return (
-    <div className="page" style={{ padding: "20px" }}>
+    <div className="body__page body__page--paddingHorizontal">
       <PageTitle title="Companies" />
       <hr className="underline" />
-      {props.companies.map(company => <Company key={company.id} companyName={company.name} flagUrl={getFlag(company.location)} companyUrl={company.website} />
+      {companies.map(company => <Company key={company.id} companyName={company.name} flagUrl={getFlag(company.location)} companyUrl={company.website} />
       )}
     </div>
   )

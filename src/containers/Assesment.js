@@ -4,22 +4,22 @@ import { ApolloClient } from 'apollo-client';
 import { HttpLink } from 'apollo-link-http';
 import { ApolloProvider } from 'react-apollo';
 
-import './App.css';
-import Header from 'Header';
+import './Assesment.css';
 import Body from 'Body';
+import config from '../config'
 import Footer from 'Footer';
+import Header from 'Header';
 
-const uri = { uri: 'https://js-assignment.reprisk.com/graphql' };
 const client = new ApolloClient({
-  link: new HttpLink(uri),
+  link: new HttpLink(config.uri),
   cache: new InMemoryCache()
 });
 
-class App extends Component {
+class Assesment extends Component {
   render() {
     return (
       <ApolloProvider client={client}>
-        <div className="App">
+        <div className="assesment">
           <Header />
           <Body />
           <Footer />
@@ -29,4 +29,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Assesment;

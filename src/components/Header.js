@@ -3,8 +3,8 @@ import logo from 'logo.svg';
 
 export default function () {
     return (
-        <div className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
+        <div className="assesment__header">
+            <img src={logo} className="assesment__logo" alt="logo" />
         </div>
     )
 }
